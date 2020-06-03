@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>我的订单</title>
+<style>
+html {
+    background: none repeat scroll 0 0 #f3f3f3;
+    color: #000;
+    font-family: "微软雅黑",Tahoma,Verdana,Arial,sans-serif;
+}
+body {
+    background: none repeat scroll 0 0 #f3f3f3;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, b, span, em {
+    margin: 0;
+    padding: 0;
+}
+#toubu1{
+	width:1200px;
+	height:100px;
+	margin-left:auto;
+	margin-right:auto;
+	font-family: "微软雅黑",Tahoma,Verdana,Arial,sans-serif;
+
+}
+
+#line1{
+	height:70px;
+	color:red;
+}
+
+#line1 img{
+	margin-left:50px;
+	margin-right:33px;
+	vertical-align:middle;
+}
+
+#line1 .line{
+	border:2px solid #ff0080;
+	height:50px;
+	display:inline-block;
+	margin-right:20px;
+	background:#676767;
+	vertical-align:middle;
+}
+
+#line1 .wddd{
+	font-size:35px;
+	color:#676767;
+	vertical-align:middle;
+}
+#line2{
+	height:40px;
+	text-align:right;
+}
+#line2 span{
+	color:#ff0080;
+	font-size:25px;
+}
+
+#line2  a{
+	font-size:25px;
+	text-decoration:none;
+}
+
+#middle{
+	width:1200px;
+	height:500px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:110px;
+	border:4px solid #FFB6C1;
+	border-top-width:10px;
+	padding-top:55px;
+	
+}
+
+#middle form{
+	width:750px;
+	margin-left:110px;
+	display:inline-block;
+}
+
+#img{
+	vertical-align:top;
+}
+
+#middle form table input{
+
+	font-size:16px;
+	color:#ff0080;
+	border:1px solid #000000;
+
+}
+
+#middle form table .protocol{
+	height:85px;
+	line-height:50px;
+	font-size:16px;
+	text-indent:60px;
+}
+
+#middle form table .protocol a{
+	color:#005ea7;
+	text-decoration:none;
+}
+
+#middle form table input[type="submit"]{
+	font-size:20px;
+	text-indent:0px;
+}
+
+#footer{
+	width:1200px;
+	height:100px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#footer p{
+	font-size:14px;
+	text-align:center;
+	/* 设置行高*/
+	line-height:34px;
+	color:#004000;
+	}
+</style>
+
+</head>
+<body>
+   <div id="toubu1">
+ 	<div id="line1">
+ 	<image src="./images/inloding.gif" />
+ 	<span class="line"></span>
+ 	<span class="wddd"><b>我的订单</b></span>
+ 	</div>
+       
+  <div id ="line2">
+  <span>已是会员？</span>
+  <a href="http://hengyang.55tuan.com">点击开通会员领红包</a>
+  </div>   
+  	
+  	<div id="middle">
+  	<form action="#">
+  	<table>
+  	<tr>
+  	<td>商品名称：</td>
+  	<td>
+  		<input type="text" name="shangpin"/>
+  	</td>	
+  	</tr>
+  	
+  	<tr>
+  	<td>商品数量：</td>
+  	<td>
+  	<select name="number">
+  	<option>1份</option>
+  	<option>2份</option>
+  	<option>3份</option>
+  	<option>4份</option>
+  	<option>5份</option>
+  	</select>
+  	</td>
+  	</tr>
+  	
+  	<tr>
+  	<td>商品单价：</td>
+  	<td>
+  	<input type="text" name="danjia" />
+  	</td>
+  	</tr>
+  		
+	<tr>
+  	<td>包装费：</td>
+  	<td>1.5元/份</td>
+  	</tr>
+  	
+  	<tr>
+  	<td>配送费：</td>
+  	<td>1元</td>
+  	</tr>
+  	
+  	<tr>
+  	<td>店铺红包:</td>
+  	<td>
+  	<select name="hongbao">
+  	<option>暂无红包&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</option>
+  	<option>暂不使用</option>
+  	<option>-3¥</option>
+  	<option>-5¥</option>
+  	<option>-8¥</option>
+  	</td>
+  	
+  	<tr>
+  	<td>合计：</td>
+  	<td>33.5</td>
+  	</tr>
+  	<hr></hr>
+  	<tr>
+  	<tr>&nbsp<td></td></tr>
+  	<td><b>配送信息</b></td>
+  	</tr>
+  	
+  	<tr>
+  	<td>送达时间：</td>
+  	<td>尽快送达</td>
+  	</tr>
+  	
+  	<tr>
+  	<td>收货地址：</td>
+  	<td>
+  	<input type="text" name="danjia" />
+  	</td>
+  	</tr>
+  	
+  	<tr>
+  	<td>配送方式：</td>
+  	<td>蜂鸟快递</td>
+  	</tr>
+  	
+  	<tr>
+<td cslspan="2" style="text-align:center;">
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	&nbsp&nbsp&nbsp&nbsp
+	我已阅读并同意
+	<a href="#"> <窝窝团用户注册协议> </a>
+</td>
+</tr>
+
+  	<tr>
+  	<td colspan="2" style="text-align:center;">
+  	<br></br>
+  	<input type="submit" value="提交订单">
+  	</tr>
+  	</table>
+  	</form>
+  	<img id="img" src="./images/biaoqian.jpg">
+  	</div>
+  	
+  	<div id="footer">
+  	<p>
+	关于我们|联系我们|人才招聘|商家入驻|营销中心|友情链接|销售联盟|窝窝社区|wowo公益
+	</br>
+	Copyright @ 2015 -2019 窝窝团55tuan.com 版权所有
+	</p>
+</div>	
+             
+</body>
+</html>

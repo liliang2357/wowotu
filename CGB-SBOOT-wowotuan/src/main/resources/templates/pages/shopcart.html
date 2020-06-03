@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+
+li{
+    list-style: none outside none;
+}
+html{
+    background: none repeat scroll 0 0 #f3f3f3;
+    color: #000;
+    font-family: "微软雅黑",Tahoma,Verdana,Arial,sans-serif;
+}
+a{
+	color:#000;
+	cursor: default;
+    outline: 0 none;
+    text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+.Gray7{
+	color:#777;
+	font-size: 12px;
+}
+.borderdc {
+    color: #dcdcdc;
+    font-weight: normal;
+    padding: 0 5px;
+}
+#headerTop{
+    background: none repeat scroll 0 0 #fafafa;
+    border-bottom: 1px solid #f4f4f4;
+    height: 29px;
+    min-width: 960px;
+    width: 100%;
+}
+#headerTop .headerTopUl{
+    height: 27px;
+    margin: 0 auto;
+    padding: 0 4px 0 10px;
+    width: 946px;
+}
+#headerTop .headerTopLogin{
+    float: left;
+    font-size: 12px;
+    height: 29px;
+    line-height: 28px;
+    width: 420px;
+}
+#headerTop .headerTopUser{
+    float: right;
+    height: 29px;
+    width: 520px;
+    display: block;
+}
+#headerMin{
+    background: none repeat scroll 0 0 #fff;
+    height: 100px;
+    min-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+#headerMin .headerConul {
+    height: 92px;
+    margin: 0 auto;
+    position: relative;
+    width: 960px;
+    z-index: 275;
+}
+#headerMin .logo, #headerMin .wowoTit, #headerMin .wowozh, .hotico, .huoico, .newico, .dzico, .mobileico, .closeTs, .triangbor, #headerMin .pointnum .Gray7, .qx, .focuswowo .close, .wowoclose, .numicon, #integration em {
+    background-image: url(images/snakepuc.png);
+}
+#headerMin .logoLi {
+    padding: 0 7px 0 0;
+    width: 102px;
+}
+#headerMin .logo{
+    background-position: 0 -127px;
+    background-repeat: no-repeat;
+    height: 69px;
+    margin: 12px -19px 0;
+    width: 101px;
+}
+#headerMin .wowoTitLi {
+    width: 87px;
+}
+#headerMin .wowoTit{
+    background-position: 0 -320px;
+    background-repeat: no-repeat;
+    height: 48px;
+    margin: 12px -19px 0;
+    width: 70px;
+}
+#headerMin li {
+    float: left;
+    height: 92px;
+}
+.bh {
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    text-indent: -999px;
+}
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+#headerMin .cityName{
+	color:#848484;
+	font-size: 28px;
+	height: 20px;
+	left:5px;
+	line-height: 20px;
+	position: absolute;
+	top:16px;
+	white-space: normal;
+	margin: 14px 206px 0;
+	width: 100px;
+} 
+#headerMin .searchLi{
+	float: right;
+	height: 64px;
+	margin-top: 28px;
+	position: relative;
+	width: 500px;
+	z-index: 81;
+}
+.searchlf .hd a {
+	border-style: solid none solid solid;
+	border-width:3px 0 3px 3px;
+    border-color:#f98235;
+    float: left;
+    font-size: 14px;
+    height: 22px;
+    line-height: 22px;
+    padding: 6px 0;
+    text-align: center;
+    width: 60px;
+    color:#666;
+	text-decoration: none;
+}
+
+.searchTxt{
+	border-style: solid solid solid none;
+	border-width:3px 3px 3px 0;
+	height: 32px;
+	position: absolute;
+	color:#f98235;
+	width: 323px;;
+	outline: none;
+	font-size: 14px;
+}
+#headerMin .searchBtn {
+    background-color: #f98235;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    height: 40px;
+    line-height: 38px;
+    position: absolute;
+    right: 44px;
+    text-align: center;
+    width: 67px;
+    
+}
+#headerNav{
+	background-color: #f98235;
+	height: 40px;
+	margin: 0 0 10px;
+	width: 100%;
+	min-width: 960px; 
+}
+#headerNav a{
+	color: #fff;
+	display: block;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	padding: 0 15px;
+	text-decoration: none;
+}
+#headerNav .navUl {
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    height: 40px;
+    margin: 0 auto;
+	width: 950px; 
+}
+#headerNav li {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+}
+.footer-btm .wowofawu a {
+	background: url("images/wowofootermsg.png") no-repeat scroll 0 0
+		rgba(0, 0, 0, 0);
+}
+.footer-btm {
+	background-color: #e7e7e7;
+	border-top: 1px solid #fff;
+	padding: 40px 0 30px;
+	width: 100%;
+	text-align: center;
+}
+.footer-btm .wowofawu {
+    height: 40px;
+    margin: 8px auto 0;
+    position: relative;
+    text-align: center;
+    width: 385px;
+}
+.footer-btm .wowofawu a {
+    display: block;
+    float: left;
+    font-size: 0;
+    height: 39px;
+    line-height: 0;
+    margin: 0 10px 0 0;
+    overflow: hidden;
+    text-indent: 0;
+}
+
+.footer-btm .wowofawu a:hover {
+    text-decoration: none;
+}
+.footer-btm .wowofawu a.fawu-1 {
+    background-position: 0 0;
+    width: 118px;
+}
+.footer-btm .wowofawu a.fawu-3 {
+    background-position: -123px 0;
+    width: 118px;
+}
+.footer-btm .wowofawu a.fawu-5 {
+    background-position: -361px 0;
+    width: 103px;
+}
+.footer {
+    background-color: #e7e7e7 !important;
+    color: #666;
+    font-size: 12px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    width: 100%;
+}
+.footer a {
+    color: #666;
+    text-decoration: none;
+}
+@charset "UTF-8";
+#payprocess {
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #cacaca;
+    color: #2e2e2e;
+    margin: 0 auto 20px;
+    padding: 20px;
+    width: 918px;
+}
+#payprocess h1, #payprocess h2, #payprocess div.title {
+    background: none repeat scroll 0 0 #fff2e4;
+    color: #745f47;
+    font-family:'微软雅黑';
+    font-size: 18px;
+    font-weight: bold;
+    height: 34px;
+    line-height: 34px;
+    margin: 0;
+    padding: 0 0 0 14px;
+}
+#payprocess table, #payprocess td, #payprocess th {
+    font-family:'微软雅黑';
+    margin: 0;
+    padding: 0;
+}
+#payprocess table {
+    margin: 10px 0 0;
+}
+#payprocess th {
+    background: none repeat scroll 0 0 #fafafa;
+    font-size: 14px;
+    height: 34px;
+    text-align: center;
+}
+#payprocess th.first {
+    padding: 0 0 0 10px;
+    text-align: left;
+}
+#payprocess td.last span, #payprocess th.last span, #payprocess td.last strong {
+    display: block;
+    padding-right: 10px;
+    text-align: right;
+}
+#payprocess td {
+    border-top: 1px dotted #cacaca;
+}
+#payprocess td span.title {
+    font-size: 14px;
+    padding: 0 0 0 10px;
+}
+#payprocess td span {
+    font-size: 14px;
+}
+#payprocess td span.price {
+    color: #666;
+    font-family: "微软雅黑","yahei";
+    font-size: 18px;
+}
+#payprocess td span.redb {
+    color: #f20000;
+    font-weight: bold;
+	font-size:16px;
+}
+#payprocess td .numbox {
+    height: 60px;
+    position: relative;
+    width: 168px;
+}
+#payprocess td .numbox .numtext {
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #cacaca;
+    color: #888;
+    display: block;
+    font-size: 18px;
+    height: 28px;
+    left: 54px;
+    line-height: 28px;
+    position: absolute;
+    text-align: center;
+    top: 15px;
+    width: 58px;
+}
+#payprocess input {
+    margin: 0;
+    padding: 0;
+}
+#payprocess td strong.price {
+    color: #f20000;
+    font-family: "微软雅黑","yahei";
+    font-size: 24px;
+    font-weight: bold;
+}
+#payprocess strong {
+    font-weight: bold;
+}
+#payprocess .subbox {
+    height: 46px;
+    padding: 26px 0 0;
+    position: relative;
+}
+#payprocess .subbox a, #payprocess .selection dd a.addshop, #payprocess td div.newaddress dd.sub a {
+    background:url(../images/pay_btnico.png) no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+#payprocess .subbox a {
+    color: #fff;
+    display: block;
+    float: right;
+    font: bold 16px/46px '微软雅黑';
+    height: 46px;
+    overflow: hidden;
+    text-align: center;
+    width: 100px;
+}
+#payprocess .subbox a.next, #payprocess .subbox a.gobuy {
+    background-position: 0 0;
+}
+
+</style>
+</head>
+<body>
+	<div id="headerTop">
+		<ul class="headerTopUl clearfix">
+			<li class="headerTopUser">
+				<span class="Gray7">
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+					[<a class="yellowd1" rel="nofollow" ref="login.html" target="_blank">我的窝窝</a>]
+					<b class="borderdc">|</b>
+					[<a class="yellowd1" rel="nofollow" ref="regist.html" target="_blank">关注</a>]
+					<b class="borderdc">|</b>
+					<a class="yellowd1" rel="nofollow" ref="regist.html" target="_blank">更多</a>
+					<b class="borderdc">|</b>
+				</span>
+			</li>
+			<li class="headerTopLogin">
+				<span class="Gray7">
+					你好!请
+					[<a class="yellowd1" rel="nofollow" ref="login.html" target="_blank">登录</a>]
+					<b class="borderdc">|</b>
+					[<a class="yellowd1" rel="nofollow" ref="regist.html" target="_blank">注册</a>]
+					<b class="borderdc">|</b>
+					<a class="yellowd1" rel="nofollow" ref="regist.html" target="_blank">消息</a>
+					<b class="borderdc">|</b>
+				</span>
+			</li>
+		</ul>
+	</div>
+	<div id="headerMin">
+		<ul class="headerConul clearfix">
+			<li class="logoLi">
+				<h1 class="bh logo">窝窝团</h1>
+			</li>
+			<li class="wowoTit">
+				<h1 class="bh wowoTitLi"></h1>
+			</li>
+			<li class="cityBox">
+				<h2 class="cityName">长沙</h2>
+			</li>
+			<li class="searchLi">
+				<div class="searchlf">
+					<div class="hd">
+						<a class="on deal" href="#">团购</a>
+					</div>
+				</div>
+				<from id="soso_submit" method="get" action="#">
+					<input class="searchTxt" type="text" autocomplete="off" maxlength="100" name="wowo" value="请输入商品名丶地址">
+					<a id="soso_submit" class="searchBtn" href="#">搜素</a>
+				</from>
+			</li>
+			
+		</ul>
+	</div>
+	<div id="headerNav">
+		<ul id="navList" class="navUl clearfix">
+        	<li><a href="#">团购精选</a></li>
+        	<li><a href="#">窝窝商城</a></li>
+        	<li><a href="#">身边</a></li>
+        	<li><a href="#">美食</a></li>
+        	<li><a href="#">娱乐</a></li>
+        	<li><a href="#">电影</a></li>
+        	<li><a href="#">美容保健</a></li>
+        	<li><a href="#">生活服务</a></li>
+        	<li><a href="#">结婚</a></li>
+        	<li><a href="#">旅行</a></li>
+        	<li><a href="#">酒店</a></li>
+        	<li><a href="#">网购</a></li>
+        	<li><a href="#">品牌汇</a></li>
+        </ul>
+	</div>
+        <div id="payprocess">
+			<h1>确认订单</h1>
+			<form id="orderform" method="post" action="/buy/insertOrder.do">
+				<table width="918" cellspacing="0" cellpadding="0" border="0">
+                    <thead>
+                        <tr>
+                            <th class="first" width="350" valign="middle">商品名称</th>
+                            <th width="130" valign="middle">价值</th>
+                            <th width="120" valign="middle">窝窝价</th>
+                            <th width="170" valign="middle">购买数量</th>
+                            <th class="last" width="138" valign="middle">
+                            	<span>总价</span>
+                            </th>
+                        </tr>
+                    </thead>
+					<tbody>
+						<tr>
+							<td valign="middle" height="60">
+                                <a href="#">
+                                	<span class="title">98元虾巢香辣虾双人套餐</span>
+                                </a>
+							</td>
+							<td valign="middle" height="60" align="center">
+								<span class="price">¥144.00</span>
+							</td>
+							<td valign="middle" height="60" align="center">
+								<span class="price">¥98.00</span>
+							</td>
+							<td valign="middle" height="60">
+								<div class="numbox">
+									<input id="productnum" class="numtext yahei" type="text" value="1" autocomplete="off" style="ime-mode: disabled;" name="number">
+								</div>
+							</td>
+							<td class="last" valign="middle" height="60" align="center">
+								<span id="yprice" class="price">¥98.00</span>
+							</td>
+						</tr>
+					</tbody>
+                    <tfoot>
+                        <tr>
+                            <td valign="middle" height="60" colspan="4">
+                            	<span class="title redb">应付总额</span>
+                            </td>
+                            <td class="last" valign="middle" align="center">
+                            	<strong class="price" style="float:right">¥98.00</strong>
+                            	<b style="display:block;float:right;margin-right:20px;font-size:14px;line-height:33px;color:red"></b>
+                            </td>
+                    	</tr>
+                        <tr>
+                        	<td colspan="5"></td>
+                        </tr>
+                    </tfoot>
+				</table>
+			</form>
+			<div class="subbox">
+				<a id="nextbtn" class="next" type="next" href="javascript:;">确认购买</a>
+				<a id="nextbtn" class="next" type="next" href="javascript:;">清空订单</a>
+				<a id="nextbtn" class="next" type="next" href="javascript:;">继续购物</a>
+				
+			</div>
+			<div class="extime" style="text-align:right;font-size:12px;color:#999;padding-top:20px;">订单将在次日失效，请尽快完成支付</div>
+		</div>
+
+                          <div class ="footer-btm">
+		<div class = "footer">
+			&copy; 2010-2014 55tuan.com 京ICP证100702号 京公海网安备110108000829号&nbsp;&nbsp;&nbsp;
+			<a target="_blank" href="#">营业执照</a>
+		</div>
+		<div class = "footer">
+				名称：北京窝窝团信息技术有限公司&nbsp;&nbsp;&nbsp;&nbsp;地址 ：北京市海淀区上地信息路18号三层3001&nbsp;&nbsp;&nbsp;&nbsp;电话 ：010-59065200
+		</div>
+		<div class = "footer">
+				营业执照注册号 ：110108011056221&nbsp;&nbsp;&nbsp;&nbsp;食品流通许可证：SP1101081110124921
+		</div>
+		<div class = "wowofawu">
+			<a class = "fawu-1" rel="nofollow" href = "#">支付宝</a>
+			<a class = "fawu-3" rel="nofollow" href = "#">可信网站</a>
+			<a class = "fawu-5" rel="nofollow" href = "#">经营性网站备案信息</a>
+		</div>
+	</div>      
+			
+</body>
+</html>

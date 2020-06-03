@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"> 
+<title>Insert title here</title>
+<link rel="stylesheet" href="css/basic.css"/>
+<style>
+li{
+    list-style: none outside none;
+}
+html{
+    background: none repeat scroll 0 0 #f3f3f3;
+    color: #000;
+    font-family: "微软雅黑",Tahoma,Verdana,Arial,sans-serif;
+}
+a{
+	color:#000;
+	cursor: default;
+    outline: 0 none;
+    text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+.Gray7{
+	color:#777;
+	font-size: 12px;
+}
+.borderdc {
+    color: #dcdcdc;
+    font-weight: normal;
+    padding: 0 5px;
+}
+#headerTop{
+    background: none repeat scroll 0 0 #fafafa;
+    border-bottom: 1px solid #f4f4f4;
+    height: 29px;
+    min-width: 960px;
+    width: 100%;
+}
+#headerTop .headerTopUl{
+    height: 27px;
+    margin: 0 auto;
+    padding: 0 4px 0 10px;
+    width: 946px;
+}
+#headerTop .headerTopLogin{
+    float: left;
+    font-size: 12px;
+    height: 29px;
+    line-height: 28px;
+    width: 420px;
+}
+#headerTop .headerTopUser{
+    float: right;
+    height: 29px;
+    width: 520px;
+    display: block;
+}
+#headerMin{
+    background: none repeat scroll 0 0 #fff;
+    height: 100px;
+    min-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+#headerMin .headerConul {
+    height: 92px;
+    margin: 0 auto;
+    position: relative;
+    width: 960px;
+    z-index: 275;
+}
+#headerMin .logo, #headerMin .wowoTit, #headerMin .wowozh, .hotico, .huoico, .newico, .dzico, .mobileico, .closeTs, .triangbor, #headerMin .pointnum .Gray7, .qx, .focuswowo .close, .wowoclose, .numicon, #integration em {
+    background-image: url(images/snakepuc.png);
+}
+#headerMin .logoLi {
+    padding: 0 7px 0 0;
+    width: 102px;
+}
+#headerMin .logo{
+    background-position: 0 -127px;
+    background-repeat: no-repeat;
+    height: 69px;
+    margin: 12px -19px 0;
+    width: 101px;
+}
+#headerMin .wowoTitLi {
+    width: 87px;
+}
+#headerMin .wowoTit{
+    background-position: 0 -320px;
+    background-repeat: no-repeat;
+    height: 48px;
+    margin: 12px -19px 0;
+    width: 70px;
+}
+#headerMin li {
+    float: left;
+    height: 92px;
+}
+.bh {
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    text-indent: -999px;
+}
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+#headerMin .cityName{
+	color:#848484;
+	font-size: 28px;
+	height: 20px;
+	left:5px;
+	line-height: 20px;
+	position: absolute;
+	top:16px;
+	white-space: normal;
+	margin: 14px 206px 0;
+	width: 100px;
+} 
+#headerMin .searchLi{
+	float: right;
+	height: 64px;
+	margin-top: 28px;
+	position: relative;
+	width: 500px;
+	z-index: 81;
+}
+.searchlf .hd a {
+	border-style: solid none solid solid;
+	border-width:3px 0 3px 3px;
+    border-color:#f98235;
+    float: left;
+    font-size: 14px;
+    height: 22px;
+    line-height: 22px;
+    padding: 6px 0;
+    text-align: center;
+    width: 60px;
+    color:#666;
+	text-decoration: none;
+}
+
+.searchTxt{
+	border-style: solid solid solid none;
+	border-width:3px 3px 3px 0;
+	height: 32px;
+	position: absolute;
+	color:#f98235;
+	width: 323px;;
+	outline: none;
+	font-size: 14px;
+}
+#headerMin .searchBtn {
+    background-color: #f98235;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    height: 40px;
+    line-height: 38px;
+    position: absolute;
+    right: 44px;
+    text-align: center;
+    width: 67px;
+    
+}
+#headerNav{
+	background-color: #f98235;
+	height: 40px;
+	margin: 0 0 10px;
+	width: 100%;
+	min-width: 960px; 
+}
+#headerNav a{
+	color: #fff;
+	display: block;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	padding: 0 15px;
+	text-decoration: none;
+}
+#headerNav .navUl {
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    height: 40px;
+    margin: 0 auto;
+	width: 950px; 
+}
+#headerNav li {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+}
+.footer-btm .wowofawu a {
+	background: url("images/wowofootermsg.png") no-repeat scroll 0 0
+		rgba(0, 0, 0, 0);
+}
+.footer-btm {
+	background-color: #e7e7e7;
+	border-top: 1px solid #fff;
+	padding: 40px 0 30px;
+	width: 100%;
+	text-align: center;
+}
+.footer-btm .wowofawu {
+    height: 40px;
+    margin: 8px auto 0;
+    position: relative;
+    text-align: center;
+    width: 385px;
+}
+.footer-btm .wowofawu a {
+    display: block;
+    float: left;
+    font-size: 0;
+    height: 39px;
+    line-height: 0;
+    margin: 0 10px 0 0;
+    overflow: hidden;
+    text-indent: 0;
+}
+
+.footer-btm .wowofawu a:hover {
+    text-decoration: none;
+}
+.footer-btm .wowofawu a.fawu-1 {
+    background-position: 0 0;
+    width: 118px;
+}
+.footer-btm .wowofawu a.fawu-3 {
+    background-position: -123px 0;
+    width: 118px;
+}
+.footer-btm .wowofawu a.fawu-5 {
+    background-position: -361px 0;
+    width: 103px;
+}
+.footer {
+    background-color: #e7e7e7 !important;
+    color: #666;
+    font-size: 12px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    width: 100%;
+}
+.footer a {
+    color: #666;
+    text-decoration: none;
+}
+</style>
+
+</head>
+<body>
+	<div id="headerTop">
+		<ul class="headerTopUl clearfix">
+			<li class="headerTopUser">
+				<span class="Gray7">
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+					[<a class="yellowd1" rel="nofollow" href="dindan.html" target="_blank">我的窝窝</a>]
+					<b class="borderdc">|</b>
+					[<a class="yellowd1" rel="nofollow" href="regist.html" target="_blank">关注</a>]
+					<b class="borderdc">|</b>
+					<a class="yellowd1" rel="nofollow" href="regist.html" target="_blank">更多</a>
+					<b class="borderdc">|</b>
+				</span>
+			</li>
+			<li class="headerTopLogin">
+				<span class="Gray7">
+					你好!请
+					[<a class="yellowd1" rel="nofollow" href="login.html" target="_blank">登录</a>]
+					<b class="borderdc">|</b>
+					[<a class="yellowd1" rel="nofollow" href="regist.html" target="_blank">注册</a>]
+					<b class="borderdc">|</b>
+					<a class="yellowd1" rel="nofollow" ref="regist.html" target="_blank">消息</a>
+					<b class="borderdc">|</b>
+				</span>
+			</li>
+		</ul>
+	</div>
+	<div id="headerMin">
+		<ul class="headerConul clearfix">
+			<li class="logoLi">
+				<h1 class="bh logo">窝窝团</h1>
+			</li>
+			<li class="wowoTit">
+				<h1 class="bh wowoTitLi"></h1>
+			</li>
+			<li class="cityBox">
+				<h2 class="cityName">长沙</h2>
+			</li>
+			<li class="searchLi">
+				<div class="searchlf">
+					<div class="hd">
+						<a class="on deal" href="#">团购</a>
+					</div>
+				</div>
+				<from id="soso_submit" method="get" action="#">
+					<input class="searchTxt" type="text" autocomplete="off" maxlength="100" name="wowo" value="请输入商品名丶地址">
+					<a id="soso_submit" class="searchBtn" href="#">搜素</a>
+				</from>
+			</li>
+			
+		</ul>
+	</div>
+	<div id="headerNav">
+		<ul id="navList" class="navUl clearfix">
+        	<li><a href="#">团购精选</a></li>
+        	<li><a href="#">窝窝商城</a></li>
+        	<li><a href="#">身边</a></li>
+        	<li><a href="#">美食</a></li>
+        	<li><a href="#">娱乐</a></li>
+        	<li><a href="#">电影</a></li>
+        	<li><a href="#">美容保健</a></li>
+        	<li><a href="#">生活服务</a></li>
+        	<li><a href="#">结婚</a></li>
+        	<li><a href="#">旅行</a></li>
+        	<li><a href="#">酒店</a></li>
+        	<li><a href="#">网购</a></li>
+        	<li><a href="#">品牌汇</a></li>
+        </ul>
+	</div>
+ <div id="wowoFocus" class="focuswowo">
+			<ul style="height: 540px; top: -90px;">
+                <li>
+                    <a target="_blank" href="#">
+                    	<img class="lazyload" width="960" height="90" original="images/ggs1.jpg" src="images/ggs1.jpg" visibility="hidden">
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="#">
+                    	<img width="960" height="90" src="images/ggs2.jpg">
+                    </a>
+                </li>
+                <li>
+                	<a target="_blank" href="#">
+                    	<img class="lazyload" width="960" height="90" original="images/ggs3.jpg" src="images/ggs3.jpg" visibility="hidden">
+                    </a>
+                </li>
+                <li>
+                	<a target="_blank" href="#">
+                    	<img class="lazyload" width="960" height="90" original="images/ggs4.jpg" src="images/ggs4.jpg" visibility="hidden">
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="#">
+                        <img class="lazyload" width="960" height="90" original="images/ggs5.jpg" src="images/ggs5.jpg" visibility="hidden">
+                    </a>
+                </li>
+                <li>
+                	<a target="_blank" href="#">
+                    	<img class="lazyload" width="960" height="90" original="images/ggs1.jpg" src="images/ggs1.jpg" visibility="hidden">
+                    </a>
+                </li>
+            </ul>
+		</div>
+        <div class="con-boxIndex clearfix">
+			<ul class="goods-allInd clearfix">
+				<li class="good-list">
+					<h2 class="good-title">
+						<a class="biaoa" title="【石鼓区】仅98元，享价值196元『熊猫餐谋环球海鲜自助餐厅』周一至周五双人自助午餐1份！提供免费WIFI，提供免费停车位！必含女士1名，提供免费专车接送，尽享环球美食！" target="_blank" href="#">
+							<strong>【石鼓区】熊猫餐谋环球海鲜自助餐厅</strong>
+							周一至周五双人自助午餐1份！提供免费WIFI，提供免费停车位！
+						</a>
+					</h2>
+					<div class="index-smalllogo">
+						<a class="yuy" target="_blank" href="#">免预约</a>
+					</div>
+					<a class="picture" target="_blank" href="#">
+						<img width="348" height="232" rel="nofollow" src="images/show1.jpg">
+					</a>
+					<div class="buy-boxInd clearfix">
+						<a class="bh buy_a" rel="nofollow" href="details.html" target="_blank" status="0">去看看</a>
+						<span class="num">¥98</span>
+						<span class="past">价值 ¥196</span>
+					</div>
+				</li>
+                <li class="good-list">
+					<h2 class="good-title">
+						<a class="biaoa" title="【雁峰区】仅67.5元，享价值160元『崇尚国际影城』3D单场双人套票1份！免费停车，高清巨幕多厅影城！" target="_blank" href="#">
+							<strong>【雁峰区】崇尚国际影城</strong>
+							3D单场双人套票1份！
+						</a>
+					</h2>
+					<div class="index-smalllogo">
+						<a class="yuy" target="_blank" href="#">免预约</a>
+					</div>
+					<a class="picture" target="_blank" href="#">
+						<img width="348" height="232" rel="nofollow" src="images/show2.jpg">
+					</a>
+					<div class="buy-boxInd clearfix">
+						<a class="bh buy_a" rel="nofollow" href="details.html" target="_blank" status="0">去看看</a>
+						<span class="num">¥67.5</span>
+						<span class="past">价值 ¥160</span>
+					</div>
+				</li>
+                <li class="good-list">
+					<h2 class="good-title">
+						<a class="biaoa" title="【南方大厦】仅8.5元，享价值10元『方燕烤猪蹄』烤猪脚1份！肉香皮脆，口感极佳，先卤再烤，回味无穷！" target="_blank" href="#">
+                            <strong>【南方大厦】方燕烤猪蹄</strong>
+                            烤猪脚1份！
+                    	</a>
+                    </h2>
+                    <div class="index-smalllogo">
+                    	<a class="yuy" target="_blank" href="#">免预约</a>
+                    </div>
+                    <a class="picture" target="_blank" href="">
+                    	<img class="lazyload" width="348" height="232" rel="nofollow" original="images/show3.jpg" src="images/show3.jpg" visibility="hidden">
+                    </a>
+                    <div class="buy-boxInd clearfix">
+                        <a class="bh buy_a" rel="nofollow" href="details.html" target="_blank" status="0">去看看</a>
+                        <span class="num">¥8.5</span>
+                        <span class="past">价值 ¥10</span>
+                    </div>
+                </li>
+                <li class="good-list">
+                    <h2 class="good-title">
+                    	<a class="biaoa" title="【石鼓区】仅6.9元，享价值9元『沐沐果茶』西米露4选1！提供免费wifi！" target="_blank" href="">
+                            <strong>【石鼓区】沐沐果茶</strong>
+                            西米露4选1！提供免费wifi！
+                    	</a>
+                    </h2>
+                    <div class="index-smalllogo">
+                    	<a class="yuy" target="_blank" href="#">免预约</a>
+                    </div>
+                    <a class="picture" target="_blank" href="#">
+                    	<img class="lazyload" width="348" height="232" rel="nofollow" original="images/show4.jpg" src="images/show4.jpg" visibility="hidden">
+                    </a>
+                    <div class="buy-boxInd clearfix">
+                        <a class="bh buy_a" rel="nofollow" href="details.html" target="_blank" status="0">去看看</a>
+                        <span class="num">¥6.9</span>
+                        <span class="past">价值 ¥9</span>
+                    </div>
+                </li>
+			</ul>
+
+		</div>
+	<div class ="footer-btm">
+		<div class = "footer">
+			&copy; 2010-2014 55tuan.com 京ICP证100702号 京公海网安备110108000829号&nbsp;&nbsp;&nbsp;
+			<a target="_blank" href="#">营业执照</a>
+		</div>
+		<div class = "footer">
+				名称：北京窝窝团信息技术有限公司&nbsp;&nbsp;&nbsp;&nbsp;地址 ：北京市海淀区上地信息路18号三层3001&nbsp;&nbsp;&nbsp;&nbsp;电话 ：010-59065200
+		</div>
+		<div class = "footer">
+				营业执照注册号 ：110108011056221&nbsp;&nbsp;&nbsp;&nbsp;食品流通许可证：SP1101081110124921
+		</div>
+		<div class = "wowofawu">
+			<a class = "fawu-1" rel="nofollow" href = "#">支付宝</a>
+			<a class = "fawu-3" rel="nofollow" href = "#">可信网站</a>
+			<a class = "fawu-5" rel="nofollow" href = "#">经营性网站备案信息</a>
+		</div>
+	</div>
+</body>
+</html>

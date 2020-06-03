@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="com.ly.cy.common.dao.activityDao">
+  <!-- <delete id="deletebyid">
+  
+  delete from tb_goods where id in
+  
+  <foreach collection="ids"open="("
+  
+  item="id" separator=","close=")">
+  
+  #{id}
+  
+  
+  </foreach>
+  </delete> -->
+  
+ 
+<!-- 不能有2个相同的id的 <delete id="deletebyid">
+  
+  delete from tb_goods 
+  <if test="ids!=nulland ids.length>0">
+  where id in
+  
+  <foreach collection="ids"open="("
+  
+  item="id" separator=","close=")">
+  
+  #{id}
+  </foreach>
+  </if>-->
+  <delete id="deletebyid">
+    delete from tb_goods 
+  <choose>
+  <when test="ids!=null and ids.length>0">
+   where id in
+  
+  <foreach collection="ids" 
+  	open="("
+  	close=")"
+  	item="id" 
+  	separator=",">
+  
+  #{id}
+  </foreach>
+  </when>
+  <otherwise>
+  
+  where 1=2;
+  </otherwise>
+  </choose>
+  </delete>
+  
+  
+  
+  
+  
+  
+  
+  
+  </mapper>

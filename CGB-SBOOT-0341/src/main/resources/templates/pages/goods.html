@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1> CGB2003</h1>
+
+<table>
+     <!-- 表头部分 -->
+     <thead>
+        <tr>
+           <th>id</th>
+           <th>title</th>
+           <th>category</th>
+           <th>startTime</th>
+           <th>endTime</th>
+           <th>remark</th>
+           <th>state</th>
+           <th>createdTime</th>
+           <th>createdUser</th>
+        </tr>
+     </thead>
+     
+     <!-- 表体部分 -->
+     <tbody>
+         <!-- 借助thymeleaf模板引擎中的属性获取对象中的值并进行呈现 -->
+        <tr th:each="g:${list}">
+           <td th:text="${g.id}"></td>
+           <td th:text="${g.title}"></td>
+           <td th:text="${g.category}"></td>
+          <!--<td th:text="${g.createdTime}"></td>-->
+           <td th:text="${g.startTime}"></td>
+            <td th:text="${g.endTime}"></td>
+             <td th:text="${g.remark}"></td>
+              <td th:text="${g.state}"></td>
+               <td th:text="${g.createdTime}"></td>
+                <td th:text="${g.createdUser}"></td>
+                <td>
+                <a th:href="@{/goods/deleteById(id=${g.id})}">删除</a>
+                
+                </td>
+        </tr>
+        
+     </tbody>
+</body>
+</html>
